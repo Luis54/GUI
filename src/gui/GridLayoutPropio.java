@@ -85,10 +85,10 @@ public class GridLayoutPropio {
 	
 	
 	
-	public static void main(String[] args) {
+	/*public static void main(String[] args) {
 		Persona p = new Persona("Luis", "Usero","Madrid" );
 		GridLayoutPropio ventana = new GridLayoutPropio(p);
 		
 		
-	}
+	}*/
 }
