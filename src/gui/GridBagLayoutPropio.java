@@ -22,7 +22,7 @@ public class GridBagLayoutPropio {
 	JFrame frame;
 	JFrame inicio;
 
-	public GridBagLayoutPropio() {
+	public GridBagLayoutPropio(Persona p) {
 		frame = new JFrame();
 		inicio = new JFrame();
 		inicio.setTitle("Programa introducir datos Persona");
@@ -68,7 +68,7 @@ public class GridBagLayoutPropio {
 		panalCentral.add(nombre, gbc_lblNombre);
 	
 		
-		JTextField textonombre = new JTextField();
+		JTextField textonombre = new JTextField(p.getNombre());
 		GridBagConstraints gbc_textFieldNombre = new GridBagConstraints();
 		gbc_textFieldNombre.anchor = GridBagConstraints.WEST;
 		gbc_textFieldNombre.insets = new Insets(0, 0, 5, 0);
@@ -169,7 +169,9 @@ public class GridBagLayoutPropio {
 	
 	
 	public static void main(String[] args) {
-		GridBagLayoutPropio ventana = new GridBagLayoutPropio();
+		Persona p = new Persona("Luis","Usero Reyes","Jaen","Calle de la luna","953450734");
+		GridBagLayoutPropio ventana = new GridBagLayoutPropio(p);
+		
 		
 		
 	}
